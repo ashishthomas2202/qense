@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  },
+  "name": "qsense",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --trace-warnings app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ashishthomas2202/qense.git"
+  },
+  "keywords": [
+    "Smart",
+    "Home"
+  ],
+  "author": "Ashish Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashishthomas2202/qense/issues"
+  },
+  "homepage": "https://github.com/ashishthomas2202/qense#readme",
+  "description": ""
+}

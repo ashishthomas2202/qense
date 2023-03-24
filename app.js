@@ -1,7 +1,15 @@
 const express = require("express");
 
+require("dotenv").config();
+
+const authRoutes = require("./routes/auth");
+
 const app = express();
 
+// Routes Middleware
+app.use("/api", authRoutes);
+
+// Routes
 app.get("/", function (req, res) {
   res.send("Hello World");
 });

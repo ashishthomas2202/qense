@@ -3,7 +3,7 @@ exports.signup = function (req, res) {
 
   console.log(req.body);
 
-  req.json({
+  res.json({
     message: "Account created successfully",
   });
 };

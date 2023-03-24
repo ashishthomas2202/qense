@@ -7,3 +7,10 @@ exports.signup = function (req, res) {
     message: "Account created successfully",
   });
 };
+
+exports.signin = function (req, res) {
+  res.json({
+    message: "signin:get",
+  });
+  //   res.send("signin");
+};

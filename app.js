@@ -1,10 +1,17 @@
 const express = require("express");
-
+const mongoose = require("mongoose");
 require("dotenv").config();
 
 const authRoutes = require("./routes/auth");
 
 const app = express();
+
+app.use(express.json());
+
+//Database
+mongoose.connect(process.env.DATABASE).then(function () {
+  console.log("DB is connected");
+});
 
 // Routes Middleware
 app.use("/api", authRoutes);
